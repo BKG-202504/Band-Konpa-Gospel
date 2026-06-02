@@ -201,32 +201,28 @@ document.getElementById("panel").style.display="none";
 
 function saveData(){
 
-document.getElementById("siteTitle").innerText=
-document.getElementById("editTitle").value;
+let nouvoNon = document.getElementById("editTitle").value;
 
-document.getElementById("siteDesc").innerText=
+document.getElementById("siteTitle").textContent = nouvoNon;
+
+document.getElementById("siteDesc").textContent =
 document.getElementById("editDesc").value;
 
-document.getElementById("aboutText").innerText=
+document.getElementById("aboutText").textContent =
 document.getElementById("editAbout").value;
 
-document.getElementById("musicText").innerText=
+document.getElementById("musicText").textContent =
 document.getElementById("editMusic").value;
 
-document.getElementById("eventText").innerText=
+document.getElementById("eventText").textContent =
 document.getElementById("editEvent").value;
 
-document.getElementById("contactText").innerText=
+document.getElementById("contactText").textContent =
 document.getElementById("editContact").value;
 
-document.getElementById("whatsappLink").href=
+document.getElementById("whatsappLink").href =
 document.getElementById("editWhatsapp").value;
 
 alert("Chanjman sove!");
 closePanel();
 }
-
-</script>
-
-</body>
-</html>
