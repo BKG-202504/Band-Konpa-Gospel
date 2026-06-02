@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin BKG</title>
 
+<style>
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px 15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Admin Band Konpa Gospel</h1>
+
+<label>Non Gwoup</label>
+<input id="groupName">
+
+<label>Sou Nou</label>
+<textarea id="about"></textarea>
+
+<label>Kontak</label>
+<textarea id="contact"></textarea>
+
+<button onclick="saveData()">Sove</button>
+
+<script>
+function saveData(){
+localStorage.setItem(
+"groupName",
+document.getElementById("groupName").value
+);
+
+localStorage.setItem(
+"about",
+document.getElementById("about").value
+);
+
+localStorage.setItem(
+"contact",
+document.getElementById("contact").value
+);
+
+alert("Done yo sove!");
+}
+</script>
+
+</body>
+</html>
